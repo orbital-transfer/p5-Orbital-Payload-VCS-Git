@@ -1,4 +1,4 @@
-package Project::Manager::Repo::Git;
+package SeeLucid::VCS::Git;
 
 use strict;
 use warnings;
