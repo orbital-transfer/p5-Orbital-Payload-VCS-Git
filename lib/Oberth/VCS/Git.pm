@@ -1,4 +1,4 @@
-package SeeLucid::VCS::Git;
+package Oberth::VCS::Git;
 
 use strict;
 use warnings;
