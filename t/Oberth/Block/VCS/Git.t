@@ -4,13 +4,13 @@ use warnings;
 
 use Test::More tests => 2;
 
-use Oberth::VCS::Git;
+use Oberth::Block::VCS::Git;
 use Path::Tiny;
 use List::AllUtils qw(first);
 
 my $gitdir = path('~/sw_projects/zmughal/bioperl-live/bioperl-live');
 
-my $gr = Oberth::VCS::Git->new( directory => $gitdir );
+my $gr = Oberth::Block::VCS::Git->new( directory => $gitdir );
 my $remotes = $gr->remotes;
 my $origin = first { $_->name eq 'origin' } @$remotes;
 my $upstream = first { $_->name eq 'upstream' } @$remotes;

@@ -1,4 +1,4 @@
-package Oberth::VCS::Git::Remote;
+package Oberth::Block::VCS::Git::Remote;
 # ABSTRACT: A Git remote
 
 use Moo;

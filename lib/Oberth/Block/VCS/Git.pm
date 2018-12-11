@@ -1,4 +1,4 @@
-package Oberth::VCS::Git;
+package Oberth::Block::VCS::Git;
 # ABSTRACT: Interface to Git VCS
 
 use strict;
@@ -8,7 +8,7 @@ use Moo;
 use URI;
 use URI::git;
 use Git::Wrapper;
-use Oberth::VCS::Git::Remote;
+use Oberth::Block::VCS::Git::Remote;
 
 has directory => ( is => 'ro', required => 1 );
 
@@ -60,7 +60,7 @@ sub _build_remotes {
 	my @remote_obj;
 	while(my ($remote_name, $remote_type) = each %remote_data ) {
 		push @remote_obj,
-			Oberth::VCS::Git::Remote->new(
+			Oberth::Block::VCS::Git::Remote->new(
 				name => $remote_name,
 				( fetch =>  $remote_type->{fetch} )x!!( exists $remote_type->{fetch} ),
 				( push =>  $remote_type->{push} )x!!( exists $remote_type->{push} ),
