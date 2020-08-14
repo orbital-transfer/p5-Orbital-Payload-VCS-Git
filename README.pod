@@ -4,7 +4,7 @@
 
 =head1 NAME
 
-Oberth::Block::VCS::Git - Interface to Git VCS
+Orbital::Payload::VCS::Git - Interface to Git VCS
 
 =head1 VERSION
 
