@@ -6,7 +6,7 @@ use Test::More tests => 2;
 
 use Orbital::Payload::VCS::Git;
 use Path::Tiny;
-use List::AllUtils qw(first);
+use List::Util::MaybeXS qw(first);
 
 my $gitdir = path('~/sw_projects/zmughal/bioperl-live/bioperl-live');
 
